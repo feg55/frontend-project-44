@@ -10,6 +10,6 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+  "brs": "bin/brain-gameain-games.js"
 }
 }
