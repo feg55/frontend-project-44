@@ -10,6 +10,12 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-  "brs": "bin/brain-gameain-games.js"
-}
+    "brs": "bin/brain-gameain-games.js"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.8.3",
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0"
+  }
 }
