@@ -1,4 +1,5 @@
-import name from "../src/cli";
+import name from "../src/cli.js";
+import readlineSync from 'readline-sync';
 const isEven = (num) => num % 2 === 0;
 const isOdd = (num) => num % 2 !== 0;
 
@@ -14,17 +15,18 @@ const eaven = () => {
         corrAnswer = "no";
     }
 
-    console.log("Question: " + num);
+    console.log("Question:" + num);
 
-    let answer = prompt("Your answer: ");
+    let answer = readlineSync.question("Your answer: ");
 
     if (isOdd(num) && answer === "no") {
-        return "Correct!";
+        console.log("Correct!");
     } else if (isEven(num) && answer === "yes") {
-        return "Correct!";
+        console.log("Correct!");
     } else {
-        return `${answer} is wrong answer ;( Correct answer was ${corrAnswer}. Let's try again, ${name}`;
+        console.log(`${answer} is wrong answer ;( Correct answer was ${corrAnswer}. Let's try again, ${name}`);
     }
 };
-
+eaven();
 export default eaven;
+
