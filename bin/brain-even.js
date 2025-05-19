@@ -1,5 +1,6 @@
 import name from "../src/cli.js";
 import readlineSync from 'readline-sync';
+let mass = [];
 const isEven = (num) => num % 2 === 0;
 const isOdd = (num) => num % 2 !== 0;
 
@@ -21,12 +22,21 @@ const eaven = () => {
 
     if (isOdd(num) && answer === "no") {
         console.log("Correct!");
+        mass.push("")
     } else if (isEven(num) && answer === "yes") {
         console.log("Correct!");
+        mass.push("")
     } else {
         console.log(`${answer} is wrong answer ;( Correct answer was ${corrAnswer}. Let's try again, ${name}`);
     }
 };
+const isEvenGame = () => {
+for (let i = 0; mass.length < 3; i++){
 eaven();
+}
+console.log("Congratulations, " + name + "!")
+}
+
+export {isEvenGame}
 export default eaven;
 
