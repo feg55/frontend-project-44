@@ -1,8 +1,6 @@
 import name from "../src/cli.js";
 import readlineSync from 'readline-sync';
 
-
-let sum = 0;
 const calc = () => {
     console.log("What is the result of the expression?");
     let simb = ["+", "*", "-"];
@@ -21,19 +19,20 @@ const calc = () => {
         return true
     }   else {
         console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${name}`);
-        // sum = sum + 1
         return false
     }
 };
 
-// calc();
-// calc();
-// calc();
+const brain_calc = () => {
+    for (let i = 0; i < 3; i++) {
+        const result = calc()
+        if (result === false) {
+            return false; 
+        }
+    }
+    console.log("Congratulations, " + name + "!"); 
+}
+brain_calc()
 
-// if (sum === 0) {
-//     console.log("Congratulations, " + name + "!")
-//     } else {
-//     console.log("I know you can better)))")
-// }
 
 export default calc;
