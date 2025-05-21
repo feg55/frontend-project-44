@@ -1,10 +1,10 @@
 import name from "../src/cli.js";
 import readlineSync from 'readline-sync';
 
-console.log("What is the result of the expression?");
+
 let sum = 0;
 const calc = () => {
-
+    console.log("What is the result of the expression?");
     let simb = ["+", "*", "-"];
 
     let num1 = Math.floor(Math.random() * 99) + 1;
@@ -18,20 +18,22 @@ const calc = () => {
     console.log(answer)
     if (Number(answer) === corrAnswer) {
         console.log("Correct!");
+        return true
     }   else {
         console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${name}`);
-        sum = sum + 1
+        // sum = sum + 1
+        return false
     }
 };
 
-calc();
-calc();
-calc();
+// calc();
+// calc();
+// calc();
 
-if (sum === 0) {
-    console.log("Congratulations, " + name + "!")
-    } else {
-    console.log("I know you can better)))")
-}
+// if (sum === 0) {
+//     console.log("Congratulations, " + name + "!")
+//     } else {
+//     console.log("I know you can better)))")
+// }
 
 export default calc;
