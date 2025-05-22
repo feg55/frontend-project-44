@@ -13,7 +13,7 @@ make install
 ```
 [![asciicast](https://asciinema.org/a/eAUXjlool7n8BsfV050JPoHQI.svg)](https://asciinema.org/a/eAUXjlool7n8BsfV050JPoHQI)
 
-## Brain-game is Even
+## Brain-game: Is Even
 
 ```bash
 make brain-even
@@ -21,6 +21,20 @@ make brain-even
 
 if you win [![asciicast](https://asciinema.org/a/9iHY2B2zvjP8SBv99F4LUA1ud.svg)](https://asciinema.org/a/9iHY2B2zvjP8SBv99F4LUA1ud)
 if you luse [![asciicast](https://asciinema.org/a/jw1WBAtsqTG1wcc8uoouHVQIR.svg)](https://asciinema.org/a/jw1WBAtsqTG1wcc8uoouHVQIR)
+
+## Brain-game: Calculator
+
+```bash
+make brain-calc
+```
+[![asciicast](https://asciinema.org/a/2b8nGiq9h2eMrmgSTLIcFbA0J.svg)](https://asciinema.org/a/2b8nGiq9h2eMrmgSTLIcFbA0J)
+
+## Brain-game: GCD
+
+```bash
+make brain-gcd
+```
+[![asciicast](https://asciinema.org/a/gf20ZyMOu1dO7A5p1UO6t4Nb7.svg)](https://asciinema.org/a/gf20ZyMOu1dO7A5p1UO6t4Nb7)
 
 asciinem's:
 [install](https://asciinema.org/a/eAUXjlool7n8BsfV050JPoHQI), 
