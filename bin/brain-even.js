@@ -1,5 +1,6 @@
 import name from "../src/cli.js";
 import readlineSync from 'readline-sync';
+import { random } from "../src/random.js";
 
 const eaven = () => {
     
@@ -8,7 +9,7 @@ const eaven = () => {
     
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     
-    let num = Math.floor(Math.random() * 99) + 1;
+    let num = random();
     let corrAnswer;
 
     if (isEven(num)) {

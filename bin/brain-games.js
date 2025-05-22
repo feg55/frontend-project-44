@@ -1,6 +1,35 @@
 #!/usr/bin/env node
 import name from "../src/cli.js";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import readlineSync from 'readline-sync';
 // import calc from "../bin/brain-calc.js";
 // import eaven from "../bin/brain-even.js";

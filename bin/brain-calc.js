@@ -1,13 +1,14 @@
 import name from "../src/cli.js";
 import readlineSync from 'readline-sync';
+import { random } from "../src/random.js";
+import { rundomSimb } from "../src/random.js";
 
 const calc = () => {
     console.log("What is the result of the expression?");
-    let simb = ["+", "*", "-"];
 
-    let num1 = Math.floor(Math.random() * 99) + 1;
-    let num2 = Math.floor(Math.random() * 99) + 1;
-    let usimb = simb[Math.floor(Math.random() * 3)];
+    let num1 = random();
+    let num2 = random();
+    let usimb = rundomSimb();
 
     console.log(`Question: ${num1} ${usimb} ${num2}`)
 
