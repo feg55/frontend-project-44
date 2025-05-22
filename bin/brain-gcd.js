@@ -1,12 +1,13 @@
-import name from "../src/cli.js";
+import * as myEngine from "../src/engine.js";
 import * as myUtils from "../src/utils.js";
 
+console.log("Find the greatest common divisor of given numbers.");
 const gcd = () => {
-    console.log("Find the greatest common divisor of given numbers.")
+
     let num1 = myUtils.random();
     let num2 = myUtils.random();
 
-    console.log(`Question: ${num1} ${num2}`)
+    console.log(`Question: ${num1} ${num2}`);
 
     while (num2 !== 0) {
         let temp = num2;
@@ -15,29 +16,15 @@ const gcd = () => {
     }
 
     let corrAnswer = num1;
-    let answer = Number(myUtils.usAnswer())
-    
-    if (answer === corrAnswer) {
-        console.log("Correct!");
-        return true
-    }   else {
-        console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${name}`);
-        return false
+    let answer = Number(myUtils.usAnswer());
+
+    myEngine.checkAnswer(answer, corrAnswer);
+    if (answer !== corrAnswer) {
+    return false;
     }
 }
 
-const brain_gcd = () => {
-    for (let i = 0; i < 3; i++) {
-        const result = gcd()
-        if (result === false) {
-            return false; 
-        }
-    }
-    console.log("Congratulations, " + name + "!"); 
-}
-brain_gcd()
-
-
+myEngine.brainСycle(gcd);
 
 
 

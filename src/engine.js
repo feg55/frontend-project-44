@@ -11,13 +11,6 @@ export const checkAnswer = (answer, corrAnswer) => {
 }
 
 export const brainСycle = (fnName) => {
-// if (fnName === "even") {
-//     const result = eaven()
-// } else if (fnName === "calc") {
-//     const result = calc()
-// } else if (fnName === "gcd") {
-//     const result = gcd()
-// }
   for (let i = 0; i < 3; i++) {
     const result = fnName();
     if (result === false) {
