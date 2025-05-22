@@ -1,19 +1,17 @@
 import name from "../src/cli.js";
-import readlineSync from 'readline-sync';
-import { random } from "../src/random.js";
-import { rundomSimb } from "../src/random.js";
+import * as myUtils from "../src/utils.js";
 
 const calc = () => {
     console.log("What is the result of the expression?");
 
-    let num1 = random();
-    let num2 = random();
-    let usimb = rundomSimb();
+    let num1 = myUtils.random();
+    let num2 = myUtils.random();
+    let usimb = myUtils.rundomSimb();
 
     console.log(`Question: ${num1} ${usimb} ${num2}`)
 
     let corrAnswer = eval(num1 + usimb + num2);
-    let answer = readlineSync.question("Your answer: ")
+    let answer = myUtils.usAnswer()
     console.log(answer)
     if (Number(answer) === corrAnswer) {
         console.log("Correct!");

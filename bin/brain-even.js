@@ -1,6 +1,5 @@
 import name from "../src/cli.js";
-import readlineSync from 'readline-sync';
-import { random } from "../src/random.js";
+import * as myUtils from "../src/utils.js";
 
 const eaven = () => {
     
@@ -9,7 +8,7 @@ const eaven = () => {
     
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     
-    let num = random();
+    let num = myUtils.random();
     let corrAnswer;
 
     if (isEven(num)) {
@@ -20,7 +19,7 @@ const eaven = () => {
 
     console.log("Question:" + num);
 
-    let answer = readlineSync.question("Your answer: ");
+    let answer = myUtils.usAnswer()
 
     if (isOdd(num) && answer === "no") {
         console.log("Correct!");
