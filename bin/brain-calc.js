@@ -11,9 +11,9 @@ const calc = () => {
     console.log(`Question: ${num1} ${usimb} ${num2}`)
 
     let corrAnswer = eval(num1 + usimb + num2);
-    let answer = myUtils.usAnswer()
-    console.log(answer)
-    if (Number(answer) === corrAnswer) {
+    let answer = Number(myUtils.usAnswer())
+
+    if (answer === corrAnswer) {
         console.log("Correct!");
         return true
     }   else {
