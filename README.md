@@ -18,9 +18,7 @@ make install
 ```bash
 make brain-even
 ```
-
-if you win [![asciicast](https://asciinema.org/a/9iHY2B2zvjP8SBv99F4LUA1ud.svg)](https://asciinema.org/a/9iHY2B2zvjP8SBv99F4LUA1ud)
-if you luse [![asciicast](https://asciinema.org/a/jw1WBAtsqTG1wcc8uoouHVQIR.svg)](https://asciinema.org/a/jw1WBAtsqTG1wcc8uoouHVQIR)
+[![asciicast](https://asciinema.org/a/rYnEM3rmiKBRGIHIlTTE9Urdi.svg)](https://asciinema.org/a/rYnEM3rmiKBRGIHIlTTE9Urdi)
 
 ## Brain-game: Calculator
 
