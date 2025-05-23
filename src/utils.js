@@ -20,3 +20,5 @@ export const usAnswer = () => {
     let answer = readlineSync.question("Your answer: ");
     return answer;
 }
+
+// потом перепишу рандомайзер на универсальный и вобью значения в функциях
