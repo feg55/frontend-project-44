@@ -12,7 +12,7 @@ const eaven = () => {
         corrAnswer = "yes";
     } else {
         corrAnswer = "no";
-    }
+    };
 
     console.log("Question:" + num);
 
@@ -20,7 +20,7 @@ const eaven = () => {
     myEngine.checkAnswer(answer, corrAnswer);
     if (answer !== corrAnswer) {
     return false;
-    }
+    };
 };
 
 myEngine.brainСycle(eaven);
