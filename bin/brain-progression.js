@@ -6,10 +6,10 @@ console.log("What number is missing in the progression?");
 const progress = () => {
 
 const progressMass = [];
-const start = myUtils.randomStart();
-const step = myUtils.randomStep();
+const start = myUtils.randomizer(1, 20);
+const step = myUtils.randomizer(1, 10);
 
-    for (let i = 0; i < myUtils.randomLength(); i++) {
+    for (let i = 0; i < myUtils.randomizer(5, 10); i++) {
         progressMass.push(start + i * step);
     };
 const numAns = myUtils.randomMassLength(progressMass)

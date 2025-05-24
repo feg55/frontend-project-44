@@ -4,8 +4,8 @@ import * as myUtils from "../src/utils.js";
 console.log("What is the result of the expression?");
 const calc = () => {
 
-    let num1 = myUtils.random();
-    let num2 = myUtils.random();
+    let num1 = myUtils.randomizer(1, 99);
+    let num2 = myUtils.randomizer(1, 99);
     let usimb = myUtils.rundomSimb();
 
     console.log(`Question: ${num1} ${usimb} ${num2}`);

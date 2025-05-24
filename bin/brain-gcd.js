@@ -4,8 +4,8 @@ import * as myUtils from "../src/utils.js";
 console.log("Find the greatest common divisor of given numbers.");
 const gcd = () => {
 
-    let num1 = myUtils.random();
-    let num2 = myUtils.random();
+    let num1 = myUtils.randomizer(1, 99);
+    let num2 = myUtils.randomizer(1, 99);
 
     console.log(`Question: ${num1} ${num2}`);
 

@@ -4,7 +4,7 @@ import * as myEngine from "../src/engine.js";
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const eaven = () => {
     
-    let num = myUtils.random();
+    let num = myUtils.randomizer(1, 99);
     const isEven = (num) => num % 2 === 0;
     let corrAnswer;
 
