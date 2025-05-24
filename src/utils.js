@@ -10,9 +10,6 @@ export const rundomSimb = () => {
     return usimb;
 };
 
-// Random for progress game
-export const randomMassLength = (mass) => Math.floor(Math.random() * mass.length) + 0;
-
 // User answer
 export const usAnswer = () => {
     let answer = readlineSync.question("Your answer: ");
