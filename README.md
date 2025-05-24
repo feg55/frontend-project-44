@@ -41,3 +41,9 @@ make brain-progression
 ```
 [![asciicast](https://asciinema.org/a/wi346AkmpJLGJCqyFtNM6PWw8.svg)](https://asciinema.org/a/wi346AkmpJLGJCqyFtNM6PWw8)
 
+## Brain-game: Prime
+
+```bash
+make brain-prime
+```
+[![asciicast](https://asciinema.org/a/B2QTtK3Cr2ikSvuDQAo4lVyjU.svg)](https://asciinema.org/a/B2QTtK3Cr2ikSvuDQAo4lVyjU)
