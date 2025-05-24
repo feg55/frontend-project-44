@@ -26,10 +26,3 @@ const gcd = () => {
 
 myEngine.brainСycle(gcd);
 
-
-
-
-
-
-
-

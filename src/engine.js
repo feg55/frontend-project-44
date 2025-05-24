@@ -3,10 +3,10 @@ import name from "../src/cli.js";
 export const checkAnswer = (answer, corrAnswer) => {
         if (answer === corrAnswer) {
         console.log("Correct!");
-        return true
+        return true;
     } else {
         console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${name}`);
-        return false
+        return false;
     }
 }
 
