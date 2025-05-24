@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as myUtils from "../src/utils.js";
 import * as myEngine from "../src/engine.js";
 
