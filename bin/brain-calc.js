@@ -1,24 +1,23 @@
 #!/usr/bin/env node
-import * as myEngine from "../src/engine.js";
-import * as myUtils from "../src/utils.js";
+import * as myEngine from '../src/engine.js'
+import * as myUtils from '../src/utils.js'
 
-console.log("What is the result of the expression?");
+console.log('What is the result of the expression?')
 const calc = () => {
+  let num1 = myUtils.randomizer(1, 99)
+  let num2 = myUtils.randomizer(1, 99)
+  let usimb = myUtils.rundomSimb()
 
-    let num1 = myUtils.randomizer(1, 99);
-    let num2 = myUtils.randomizer(1, 99);
-    let usimb = myUtils.rundomSimb();
+  console.log(`Question: ${num1} ${usimb} ${num2}`)
 
-    console.log(`Question: ${num1} ${usimb} ${num2}`);
+  let corrAnswer = eval(num1 + usimb + num2)
+  let answer = Number(myUtils.usAnswer())
 
-    let corrAnswer = eval(num1 + usimb + num2);
-    let answer = Number(myUtils.usAnswer());
+  myEngine.checkAnswer(answer, corrAnswer)
+  if (answer !== corrAnswer) {
+    return false
+  }
+}
+myEngine.brainСycle(calc)
 
-    myEngine.checkAnswer(answer, corrAnswer);
-    if (answer !== corrAnswer) {
-    return false;
-    }
-};
-myEngine.brainСycle(calc);
-
-export default calc;
+export default calc

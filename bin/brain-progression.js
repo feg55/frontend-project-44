@@ -1,32 +1,31 @@
 #!/usr/bin/env node
-import * as myUtils from "../src/utils.js";
-import * as myEngine from "../src/engine.js";
+import * as myUtils from '../src/utils.js'
+import * as myEngine from '../src/engine.js'
 
-console.log("What number is missing in the progression?");
+console.log('What number is missing in the progression?')
 
 const progress = () => {
+  const progressMass = []
+  const start = myUtils.randomizer(1, 20)
+  const step = myUtils.randomizer(1, 10)
 
-const progressMass = [];
-const start = myUtils.randomizer(1, 20);
-const step = myUtils.randomizer(1, 10);
+  for (let i = 0; i < myUtils.randomizer(5, 10); i++) {
+    progressMass.push(start + i * step)
+  }
+  const numAns = myUtils.randomizer(0, progressMass.length - 1)
 
-    for (let i = 0; i < myUtils.randomizer(5, 10); i++) {
-        progressMass.push(start + i * step);
-    }
-const numAns = myUtils.randomizer(0, progressMass.length - 1);
+  let corrAnswer = progressMass[numAns]
+  // console.log(progressMass);
+  progressMass[numAns] = '..'
+  const betterOutput = progressMass.join(' ')
+  console.log('Question: ' + betterOutput)
+  let answer = Number(myUtils.usAnswer())
 
-let corrAnswer = progressMass[numAns];
-    // console.log(progressMass);
-progressMass[numAns] = "..";
-const betterOutput = progressMass.join(" ");
-    console.log("Question: " + betterOutput);
-    let answer = Number(myUtils.usAnswer());
+  myEngine.checkAnswer(answer, corrAnswer)
+  if (answer !== corrAnswer) {
+    return false
+  }
+}
+myEngine.brainСycle(progress)
 
-        myEngine.checkAnswer(answer, corrAnswer);
-        if (answer !== corrAnswer) {
-        return false;
-        }
-};
-myEngine.brainСycle(progress);
-
-export default progress;
+export default progress

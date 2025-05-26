@@ -1,29 +1,29 @@
 #!/usr/bin/env node
-import * as myUtils from "../src/utils.js";
-import * as myEngine from "../src/engine.js";
+import * as myUtils from '../src/utils.js'
+import * as myEngine from '../src/engine.js'
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Answer "yes" if the number is even, otherwise answer "no".')
 const eaven = () => {
-    
-    let num = myUtils.randomizer(1, 99);
-    const isEven = (num) => num % 2 === 0;
-    let corrAnswer;
+  let num = myUtils.randomizer(1, 99)
+  const isEven = num => num % 2 === 0
+  let corrAnswer
 
-    if (isEven(num)) {
-        corrAnswer = "yes";
-    } else {
-        corrAnswer = "no";
-    }
+  if (isEven(num)) {
+    corrAnswer = 'yes'
+  }
+  else {
+    corrAnswer = 'no'
+  }
 
-    console.log("Question: " + num);
+  console.log('Question: ' + num)
 
-    let answer = myUtils.usAnswer();
-    myEngine.checkAnswer(answer, corrAnswer);
-    if (answer !== corrAnswer) {
-    return false;
-    }
-};
+  let answer = myUtils.usAnswer()
+  myEngine.checkAnswer(answer, corrAnswer)
+  if (answer !== corrAnswer) {
+    return false
+  }
+}
 
-myEngine.brainСycle(eaven);
+myEngine.brainСycle(eaven)
 
-export default eaven;
+export default eaven
