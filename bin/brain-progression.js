@@ -13,7 +13,7 @@ const step = myUtils.randomizer(1, 10);
     for (let i = 0; i < myUtils.randomizer(5, 10); i++) {
         progressMass.push(start + i * step);
     }
-const numAns = myUtils.randomizer(0, progressMass.length - 1)
+const numAns = myUtils.randomizer(0, progressMass.length - 1);
 
 let corrAnswer = progressMass[numAns];
     // console.log(progressMass);

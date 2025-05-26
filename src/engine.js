@@ -9,7 +9,7 @@ export const checkAnswer = (answer, corrAnswer) => {
         console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${userName}!`);
         return false;
     }
-}
+};
 
 export const brainСycle = (fnName) => {
   for (let i = 0; i < 3; i++) {
@@ -20,7 +20,7 @@ export const brainСycle = (fnName) => {
   }
   console.log("Congratulations, " + userName + "!");
   return true;
-}
+};
 
 
 

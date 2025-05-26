@@ -23,7 +23,7 @@ const gcd = () => {
     if (answer !== corrAnswer) {
     return false;
     }
-}
+};
 
 myEngine.brainСycle(gcd);
 
