@@ -22,7 +22,7 @@ const prime = () => {
         }
     }
 
-    console.log("Question:" + num);
+    console.log("Question: " + num);
 
     let answer = myUtils.usAnswer();
     myEngine.checkAnswer(answer, corrAnswer);

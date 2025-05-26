@@ -6,7 +6,7 @@ export const checkAnswer = (answer, corrAnswer) => {
         console.log("Correct!");
         return true;
     } else {
-        console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${userName}`);
+        console.log(`${answer} is wrong answer ;( Correct answer was "${corrAnswer}". Let's try again, ${userName}!`);
         return false;
     }
 }
