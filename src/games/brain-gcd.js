@@ -25,7 +25,7 @@ const gcd = () => {
 }
 
 export const exGcd = () => {
-  return myEngine.brainСycle(gcd)
+  return myEngine.brainCycle(gcd)
 }
 
-// myEngine.brainСycle(gcd)
+// myEngine.brainCycle(gcd)

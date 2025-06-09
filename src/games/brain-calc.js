@@ -19,6 +19,6 @@ const calc = () => {
   }
 }
 export const exCalc = () => {
-  return myEngine.brainСycle(calc)
+  return myEngine.brainCycle(calc)
 }
 export default calc

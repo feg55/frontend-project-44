@@ -28,7 +28,7 @@ const progress = () => {
 }
 
 export const exProgression = () => {
-  return myEngine.brainСycle(progress)
+  return myEngine.brainCycle(progress)
 }
 
 export default progress

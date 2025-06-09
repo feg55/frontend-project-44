@@ -25,7 +25,7 @@ const eaven = () => {
 }
 
 export const exEven = () => {
-  return myEngine.brainСycle(eaven)
+  return myEngine.brainCycle(eaven)
 }
 
 export default eaven

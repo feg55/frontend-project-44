@@ -12,12 +12,14 @@ export const checkAnswer = (answer, corrAnswer) => {
   }
 }
 
-export const brainСycle = (fnName) => {
-  for (let i = 0; i < 3; i++) {
-    const result = fnName()
-    if (result === false) {
-      return false
-    }
+export const brainCycle = (fnName) => {
+  const results = [0, 1, 2].reduce((acc) => {
+    if (acc === false) return false
+    return fnName()
+  }, true)
+
+  if (results === false) {
+    return false
   }
   console.log('Congratulations, ' + userName + '!')
   return true

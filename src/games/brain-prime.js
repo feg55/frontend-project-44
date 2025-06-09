@@ -33,7 +33,7 @@ const prime = () => {
 }
 
 export const exPrime = () => {
-  return myEngine.brainСycle(prime)
+  return myEngine.brainCycle(prime)
 }
 
 export default prime
